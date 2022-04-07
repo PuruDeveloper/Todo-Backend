@@ -15,7 +15,7 @@ logger = custom_logger(logger)
 
 def create_app(test_config=None):
     app = Flask(__name__)
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost/SampleDb'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://fkvtobdmbbuukp:4799b40e2781a5cc50577ec3a4b8817ce02e4e009794adc79f8bfadd103cac48@ec2-3-217-251-77.compute-1.amazonaws.com:5432/d2mm0ovu6vbs9o'
 
     from static.todoApp.model.todo_list_model import Todo
     db.init_app(app)
